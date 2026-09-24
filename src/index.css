@@ -1,0 +1,31 @@
+/* Reset, design tokens & base styles */
+:root {
+  --bg-0: #1A0505;
+  --bg-1: #2B0A0A;
+  --bg-2: #3D1010;
+  --text: #F5E9E4;
+  --text-dim: #C9AFA8;
+  --accent: #C0392B;
+  --accent-2: #E8734F;
+  --line: rgba(245, 233, 228, 0.14);
+  box-sizing: border-box;
+  padding-top: env(safe-area-inset-top, 0px);
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+*{box-sizing:border-box;}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth;}
+body{
+  margin:0;
+  background: radial-gradient(120% 90% at 50% 0%, var(--bg-2) 0%, var(--bg-1) 45%, var(--bg-0) 100%);
+  color: var(--text);
+  font-family:'Inter',sans-serif;
+  line-height:1.55;
+  overflow-x:hidden;
+}
+.display{font-family:'Manrope',sans-serif;}
+.wrap{max-width:1600px;margin:0 auto;padding:0 48px;position:relative;z-index:1;}
+
+/* Base section */
+section{padding:80px 0;border-top:1px solid var(--line);}
+
+a:focus-visible, button:focus-visible{outline:2px solid var(--accent-2);outline-offset:2px;}
